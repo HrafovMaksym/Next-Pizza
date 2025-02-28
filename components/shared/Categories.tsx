@@ -10,7 +10,7 @@ import React from "react";
 // }
 export const categories = [
   {
-    name: "Пиццы",
+    name: "Pizza",
   },
   {
     name: "Завтрак",
