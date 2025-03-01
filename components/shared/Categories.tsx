@@ -13,16 +13,16 @@ export const categories = [
     name: "Pizza",
   },
   {
-    name: "Завтрак",
+    name: "Breakfast",
   },
   {
-    name: "Закуски",
+    name: "Deserts",
   },
   {
-    name: "Коктейли",
+    name: "Cocteils",
   },
   {
-    name: "Напитки",
+    name: "Drinks",
   },
 ];
 const categoryActiveId = 0;
