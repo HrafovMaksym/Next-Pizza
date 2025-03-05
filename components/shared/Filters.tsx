@@ -30,9 +30,60 @@ export const Filters: React.FC<Props> = ({ className }) => {
       <CheckboxFiltersGroup
         title="Ingredients"
         name="ingredients"
+        defaultItems={[]}
+        loading={false}
         className="mt-5"
-        limit={6}
-        items={[]}
+        limit={5}
+        items={[
+          {
+            text: "Cheese sauce",
+            value: "1",
+          },
+          {
+            text: "Pizza",
+            value: "2",
+          },
+          {
+            text: "Mozzarella",
+            value: "3",
+          },
+          {
+            text: "Pickles",
+            value: "4",
+          },
+          {
+            text: "Tomato sauce",
+            value: "5",
+          },
+          {
+            text: "Pepperoni",
+            value: "6",
+          },
+          {
+            text: "Mushrooms",
+            value: "7",
+          },
+          {
+            text: "Olives",
+            value: "8",
+          },
+          {
+            text: "Onions",
+            value: "9",
+          },
+          {
+            text: "Bell peppers",
+            value: "10",
+          },
+          {
+            text: "Basil",
+            value: "11",
+          },
+          {
+            text: "Parmesan",
+            value: "12",
+          },
+        ]}
       />
     </div>
   );

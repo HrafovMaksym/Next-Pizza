@@ -3,14 +3,13 @@
 import React from "react";
 import { FilterChecboxProps, FilterCheckbox } from "./FilterCheckBox";
 import { Input } from "../ui/input";
-import { Skeleton } from "../ui";
 
 type Item = FilterChecboxProps;
 
 interface Props {
   title: string;
   items: Item[];
-  defaultItems?: Item[];
+  defaultItems: Item[];
   limit?: number;
   loading?: boolean;
   searchInputPlaceholder?: string;
@@ -39,29 +38,11 @@ export const CheckboxFiltersGroup: React.FC<Props> = ({
   const onChangeSearchInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(e.target.value);
   };
-
-  if (loading) {
-    return (
-      <div className={className}>
-        <p className="font-bold mb-3">{title}</p>
-
-        {...Array(limit)
-          .fill(0)
-          .map((_, index) => (
-            <Skeleton key={index} className="h-6 mb-4 rounded-[8px]" />
-          ))}
-
-        <Skeleton className="w-28 h-6 mb-4 rounded-[8px]" />
-      </div>
-    );
-  }
-
   const list = showAll
     ? items.filter((item) =>
-        item.text.toLowerCase().includes(searchValue.toLocaleLowerCase())
+        item.text.toLowerCase().includes(searchValue.toLowerCase())
       )
-    : (defaultItems || items).slice(0, limit);
-
+    : items?.slice(0, limit);
   return (
     <div className={className}>
       <p className="font-bold mb-3">{title}</p>
