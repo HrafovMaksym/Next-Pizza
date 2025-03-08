@@ -45,6 +45,33 @@ export default function Home() {
                 ]}
                 categoryId={0}
               />
+              <ProductsGroupList
+                title="Breakfast"
+                items={[
+                  {
+                    id: 0,
+                    name: "Mozzarella Pizza",
+                    price: 30,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:584x584/01953ced168c758399984df8561623a3.avif",
+                  },
+                  {
+                    id: 1,
+                    name: "Mozzarella Pizza",
+                    price: 30,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:584x584/01953ced168c758399984df8561623a3.avif",
+                  },
+                  {
+                    id: 2,
+                    name: "Mozzarella Pizza",
+                    price: 30,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:584x584/01953ced168c758399984df8561623a3.avif",
+                  },
+                ]}
+                categoryId={1}
+              />
             </div>
           </div>
         </div>
