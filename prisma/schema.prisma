@@ -39,15 +39,12 @@ model Product {
 
 
 model ProductItem {
-        id Int @id @default(autoincrement())
-
-        name String
-        size Int?
-        pizzaType Int?
-
-        product Product @relation(fields: [productId], references: [id])
-        productId Int
-
+    id Int @id @default(autoincrement())
+    name String
+    size Int?
+    pizzaType Int?
+    product Product @relation(fields: [productId], references: [id])
+    productId Int
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 }
@@ -64,11 +61,9 @@ model Ingredients {
 }
 model Cart {
 
- id Int @id @default(autoincrement())
-
-
-  user        User?    @relation(fields: [userId], references: [id]) 
-  userId      Int?  @unique
+    id Int @id @default(autoincrement())
+    user User? @relation(fields: [userId], references: [id]) 
+    userId  Int?  @unique
     token String
 
     totalAmount Int
