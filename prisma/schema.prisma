@@ -11,9 +11,9 @@ model User {
     email String @unique
     password String
     role UserRole @default(USER)
-    provider String
-    providerId Int
-
+    provider String?
+    providerId Int?
+    verified DateTime
     cart Cart?
     verification VerificationCode?
     orders Order[]
@@ -30,8 +30,7 @@ model Category {
 model Product {
     id Int @id @default(autoincrement())
     name String
-    imgUrl String
-    price Float
+    imageUrl String
 
     ingredients Ingredients[]
     items ProductItem[]
