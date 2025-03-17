@@ -12,6 +12,9 @@ async function up() {
   await prisma.product.createMany({
     data: products,
   });
+  const pizza1 = {
+    name: "Pizza",
+  };
 }
 async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "Category" RESTART IDENTITY CASCADE`;

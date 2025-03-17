@@ -1,3 +1,5 @@
+import { shake } from "@/assets/images/shake1.webp";
+
 export const categories = [
   {
     name: "Pizzas",
