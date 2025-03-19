@@ -1,5 +1,20 @@
-import { shake } from "@/assets/images/shake1.webp";
-
+import banana from "@/assets/images/banana.webp";
+import chicken from "@/assets/images/chicken.webp";
+import coffe from "@/assets/images/coffe.webp";
+import coffe1 from "@/assets/images/coffe1.webp";
+import coffe2 from "@/assets/images/coffee2.webp";
+import coffe3 from "@/assets/images/coffee3.webp";
+import coffe4 from "@/assets/images/coffee4.webp";
+import free from "@/assets/images/free.webp";
+import new1 from "@/assets/images/new1.webp";
+import new2 from "@/assets/images/new2.webp";
+import roll from "@/assets/images/roll.webp";
+import roll2 from "@/assets/images/roll2.webp";
+import sand from "@/assets/images/sand.webp";
+import shake1 from "@/assets/images/shake1.webp";
+import shake2 from "@/assets/images/shake2.webp";
+import shake3 from "@/assets/images/shake3.webp";
+import shake4 from "@/assets/images/shake4.webp";
 export const categories = [
   {
     name: "Pizzas",
@@ -125,104 +140,87 @@ export const _ingredients = [
 export const products = [
   {
     name: "Omelet with ham and mushrooms",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7970321044479C1D1085457A36EB.webp",
+    imageUrl: new1,
     categoryId: 2,
   },
   {
     name: "Omelet with pepperoni",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE94ECF33B0C46BA410DEC1B1DD6F8.webp",
+    imageUrl: new2,
     categoryId: 2,
   },
   {
     name: "Coffee Latte",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D61B0C26A3F85D97A78FEEE00AD.webp",
+    imageUrl: coffe2,
     categoryId: 2,
   },
   {
     name: "Denwich ham and cheese",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.webp",
+    imageUrl: sand,
     categoryId: 3,
   },
   {
     name: "Chicken nuggets",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D618B5C7EC29350069AE9532C6E.webp",
+    imageUrl: chicken,
     categoryId: 3,
   },
   {
     name: "Baked potatoes with sauce 🌱",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EED646A9CD324C962C6BEA78124F19.webp",
+    imageUrl: free,
     categoryId: 3,
   },
   {
     name: "Dodster",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE796F96D11392A2F6DD73599921B9.webp",
+    imageUrl: roll2,
     categoryId: 3,
   },
   {
     name: "Spicy Dodster 🌶️🌶️",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE796FD3B594068F7A752DF8161D04.webp",
+    imageUrl: roll,
     categoryId: 3,
   },
   {
     name: "Banana milkshake",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EEE20B8772A72A9B60CFB20012C185.webp",
+    imageUrl: banana,
     categoryId: 4,
   },
   {
     name: "Caramel apple milkshake",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE79702E2A22E693D96133906FB1B8.webp",
+    imageUrl: shake1,
     categoryId: 4,
   },
   {
     name: "Milkshake with Oreo cookies",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE796FA1F50F8F8111A399E4C1A1E3.webp",
+    imageUrl: shake2,
     categoryId: 4,
   },
   {
     name: "Classic milkshake 👶",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE796F93FB126693F96CB1D3E403FB.webp",
+    imageUrl: shake3,
     categoryId: 4,
   },
   {
     name: "Irish Cappuccino",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D61999EBDA59C10E216430A6093.webp",
+    imageUrl: shake4,
     categoryId: 5,
   },
   {
     name: "Caramel cappuccino coffee",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D61AED6B6D4BFDAD4E58D76CF56.webp",
+    imageUrl: coffe4,
     categoryId: 5,
   },
   {
     name: "Coconut latte coffee",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D61B19FA07090EE88B0ED347F42.webp",
+    imageUrl: coffe1,
     categoryId: 5,
   },
   {
     name: "Americano coffee",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.webp",
+    imageUrl: coffe,
     categoryId: 5,
   },
   {
     name: "Coffee Latte",
-    imageUrl:
-      "https://media.dodostatic.net/image/r:292x292/11EE7D61B0C26A3F85D97A78FEEE00AD.webp",
+    imageUrl: coffe3,
     categoryId: 5,
   },
 ];
